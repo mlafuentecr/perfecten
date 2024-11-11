@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">perfecten</h1>
+      <nav>
+        <a href="#about" class="mx-3 text-gray-600 hover:text-green-600">Sobre nosotros</a>
+        <a href="#services" class="mx-3 text-gray-600 hover:text-green-600">Servicios</a>
+        <a href="#contact" class="mx-3 text-gray-600 hover:text-green-600">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center h-screen bg-white text-center p-10">
+    <h2 class="text-4xl font-semibold text-gray-800 mb-4">Descubre tu paz interior</h2>
+    <p class="text-lg text-gray-600 mb-8 max-w-lg">Conéctate con el presente y vive una vida plena y consciente.</p>
+    <button class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition">Empezar Ahora</button>
+    <img src="https://picsum.photos/800/400?grayscale" alt="Mindfulness Image" class="mt-10 w-full max-w-xl rounded-lg shadow-lg">
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6">¿Qué es el Mindfulness?</h2>
+      <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">El mindfulness es una práctica para alcanzar la tranquilidad y vivir plenamente en el presente.</p>
+      <img src="https://picsum.photos/600/400" alt="Mindfulness Image" class="mx-auto mt-8 w-full max-w-md rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6">Nuestros Servicios</h2>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <div class="w-80 p-6 bg-white rounded-lg shadow-md">
+          <img src="https://picsum.photos/400/300" alt="Meditation" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Meditación Guiada</h3>
+          <p class="text-gray-600">Descubre el poder de la meditación para reducir el estrés y mejorar la salud mental.</p>
+        </div>
+        <div class="w-80 p-6 bg-white rounded-lg shadow-md">
+          <img src="https://picsum.photos/401/300" alt="Sound Therapy" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Terapia de Sonido</h3>
+          <p class="text-gray-600">Una experiencia auditiva para la relajación profunda y el bienestar.</p>
+        </div>
+        <div class="w-80 p-6 bg-white rounded-lg shadow-md">
+          <img src="https://picsum.photos/402/300" alt="Life Coaching" class="w-full h-40 object-cover rounded-md mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Coaching de Vida</h3>
+          <p class="text-gray-600">Aprende a vivir el presente y mejorar tu calidad de vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-gray-600 p-5">
+    <div class="container mx-auto text-center">
+      <p>&copy; <span id="footer-year"></span> Mindfulness. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript básico para el año en el footer -->
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
